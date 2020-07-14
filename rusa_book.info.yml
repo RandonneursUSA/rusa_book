@@ -1,0 +1,7 @@
+name: 'RUSA Book'
+type: module
+description: 'Fixes the book menu'
+core: 8.x
+package: 'RUSA'
+dependencies:
+  - book
