@@ -32,7 +32,7 @@ class RusaBookNavigationBlock extends BookNavigationBlock {
           // not show unpublished books.
           $nid = \Drupal::entityQuery('node')
             ->condition('nid', $node->book['bid'], '=')
-            ->condition('status', NODE_PUBLISHED)
+            ->condition('status', PUBLISHED)
             ->execute();
 
           // Only show the block if the user has view access for the top-level node.
